@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Cadastro</title>
+   <link rel="stylesheet" href="/css/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+</head>
+
+<body>
+   <div class='container'>
+      <div class='card'>
+         <h1> Cadastrar </h1>
+
+         <div id='msgError'></div>
+         <div id='msgSuccess'></div>
+
+         <div class="label-float">
+            <input type="text" id="nome" placeholder=" " required>
+            <label id="labelNome" for="nome">Nome</label>
+         </div>
+
+         <div class="label-float">
+            <input type="text" id="usuario" placeholder=" " required>
+            <label id="labelUsuario" for="usuario">Usuário</label>
+         </div>
+
+         <div class="label-float">
+            <input type="text" id="email" placeholder=" " required>
+            <label id="labelEmail" for="email">E-mail</label>
+         </div>
+
+         <div class="label-float">
+            <input type="password" id="senha" placeholder=" " required>
+            <label id="labelSenha" for="senha">Senha</label>
+            <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+
+         </div>
+
+         <div class="label-float">
+            <input type="password" id="confirmSenha" placeholder=" " required>
+            <label id="labelConfirmSenha" for="confirmSenha">Confirmar Senha</label>
+            <i id="verConfirmSenha" class="fa fa-eye" aria-hidden="true"></i>
+         </div>
+
+         <div class="check-float">
+            <input type="checkbox" id="info">
+            <label for="info">Desejo receber informações sobre promoções e novidades.</label>
+         </div>
+
+         <div class="check-float">
+            <input type="checkbox" id="termos" required=''>
+            <label id="labelTermos" for="termos">Li e aceito os <a target="_blank"
+                  href="/cadastro/termos_uso.html">termos de uso*.</a></label>
+            <div id="msgErrorTermos"></div>
+         </div>
+
+         <div class='justify-center'>
+            <button onclick='cadastrar()'>Cadastrar</button>
+         </div>
+
+         <div class="justify-center">
+            <hr>
+         </div>
+
+         <p class="direct">Já tem uma conta? <a href="/index.html">Login</a></p>
+
+      </div>
+   </div>
+
+   <script src="/script/script.js"></script>
+</body>
+
+</html>
